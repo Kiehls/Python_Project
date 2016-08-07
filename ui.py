@@ -129,6 +129,7 @@ def click(func):
 
     elif func == btnList[3]: # 열기
         clear()
+        dataField = []; listNum = 1
         filename = frameList[3].get()
         if not filename == '' and os.path.exists('%s.txt' % filename):
             file = open('%s.txt' % filename, 'r')
